@@ -123,7 +123,7 @@ img {
     }
     .barra {
         height: auto;
-        padding: 1.2rem 0;
+        padding: 2rem 0;
         position: relative; 
     }
     .barra-container {
@@ -132,7 +132,7 @@ img {
     .menu {
         flex-direction: column;
         align-items: center;
-        gap: 1.2rem;
+        gap: 2rem;
     }
     .menu a {
         font-size: 0.82rem;
@@ -214,7 +214,6 @@ img {
 @media (max-width: 1024px) {
     .principal {
         background-size: cover; 
-        background-attachment: scroll; 
         background-position: center center; 
         align-items: flex-end;
         padding-bottom: 0;
@@ -246,7 +245,6 @@ img {
         background-image: url("../img/fondomobile.png");
         background-position: center top;
         background-size: cover;
-        background-attachment: scroll;
         align-items: flex-end;
         padding-bottom: 0;
     }
