@@ -189,7 +189,6 @@ img {
 .efecto-texto3 {
     position: absolute;
     bottom: 15%;
-    left: 0;
     width: 100%;
     text-align: center;
     color: #ffffff;
@@ -232,7 +231,7 @@ img {
 }
 
 .imagen-2 img {
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease; 
 }
 
 .imagen-3 img {
