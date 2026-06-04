@@ -115,7 +115,7 @@ img {
 }
 
 /* RESPONSIVE MENU */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
         /* BARRA */
     .logo,
     .iconos {
@@ -355,7 +355,7 @@ img {
 }
 
 /* RESPONSIVE INFORMACION */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
     .contendedor-informacion {
         flex-direction: column;

@@ -118,7 +118,7 @@ img {
 }
 
 /* RESPONSIVE MENU */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
     .logo,
     .iconos {
@@ -245,7 +245,7 @@ img {
 }
 
 /* RESPONSIVE IMAGENES */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .imagenes {
         margin-top: 0;
         padding: 2rem 1rem;
@@ -314,7 +314,7 @@ img {
 }
 
 /* RESPONSIVE BLOQUE PRINCIPAL */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .bloque-principal {
         padding: 0;
     }

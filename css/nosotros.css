@@ -117,7 +117,7 @@ img {
 }
 
 /* RESPONSIVE MENU */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
     .logo,
     .iconos {
@@ -179,7 +179,7 @@ img {
 }
 
 /* RESPONSIVE VIDEOS */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .bloque1-videos {
         margin-top: 0;
         padding: 2rem 1rem;
@@ -282,7 +282,7 @@ img {
 }
 
 /* RESPONSIVE AUDIOS */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
     .audios-container {
         flex-direction: column;
@@ -342,7 +342,7 @@ img {
 }
 
 /* RESPONSIVE BLOQUE FINAL */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
     .bloqueFinal-container {
         flex-direction: column;

@@ -117,7 +117,7 @@ img {
 }
 
 /* RESPONSIVE MENU */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
     .logo,
     .iconos {
@@ -190,7 +190,6 @@ img {
 .icon1:hover {
     transform: scale(1.2) rotate(15deg);
     background-color: #ffd519;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
 .icon1 i {
@@ -251,11 +250,11 @@ img {
     color: #e8e0d0;
     text-align: center;
     letter-spacing: 1px;
-    margin: 0; 
+    margin: 0;
 }
 
 /* RESPONSIVE ANIMACIONES */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .animaciones-container {
         flex-direction: column;
         justify-content: center;
@@ -324,12 +323,11 @@ img {
 .faq-item p {
     padding: 0 1.5rem 1.2rem 1.5rem;
     color: #888;
-    font-size: 0.99rem;
+    font-size: 1rem;
     line-height: 1.8;
 }
 
-@media (max-width: 1024px) {
-
+@media (max-width: 768px) {
     .faq {
         padding: 3rem 1rem;
     }

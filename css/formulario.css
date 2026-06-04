@@ -117,7 +117,7 @@ img {
 }
 
 /* RESPONSIVE MENU */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
     .logo,
     .iconos {
@@ -216,7 +216,7 @@ img {
 }
 
 /* RESPONSIVE FORMULARIO */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
     .contacto {
         margin-top: 0;
