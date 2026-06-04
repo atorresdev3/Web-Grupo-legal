@@ -17,13 +17,11 @@ img {
 /* BARRA */
 .barra {
     position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 100;
-    height: 65px;
+    z-index: 100; 
+    height: 65px; 
     padding: 0 2rem;
     background: rgba(5, 5, 10, 0.85);
-    backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(201, 168, 76, 0.2);
 }
 
@@ -97,7 +95,7 @@ img {
     color: #e8e0d0;
     font-size: 0.78rem;
     letter-spacing: 1px;
-    outline: none;
+    outline: none; 
     width: 150px;
 }
 
@@ -117,7 +115,7 @@ img {
 }
 
 /* RESPONSIVE MENU */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
         /* BARRA */
     .logo,
     .iconos {
@@ -126,7 +124,7 @@ img {
     .barra {
         height: auto;
         padding: 1.2rem 0;
-        position: relative;
+        position: relative; 
     }
     .barra-container {
         justify-content: center;
@@ -146,10 +144,10 @@ img {
 .principal {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100vh; 
     background-image: url("../img/fondoheader.png");
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;  
     background-color: #0a0a0e;
     background-position: right center;
     background-attachment: fixed;
@@ -158,8 +156,8 @@ img {
 }
 
 .sombra {
-    position: absolute;
-    inset: 0;
+    position: absolute; 
+    inset: 0; 
     background: linear-gradient(
     to right,
     rgba(5, 5, 10, 0.9) 0%,
@@ -168,9 +166,9 @@ img {
 }
 
 .texto-principal {
-    position: relative;
-    z-index: 10;
-    padding: 0 5rem;
+    position: relative; 
+    z-index: 10; 
+    padding: 0 5rem; 
     max-width: 580px;
 }
 
@@ -193,14 +191,14 @@ img {
 }
 
 .texto-principal a {
-    display: inline-block;
+    display: inline-block; 
     padding: 12px 30px;
     border: 1px solid #c9a84c;
     color: #c9a84c;
     text-decoration: none;
     font-size: 0.82rem;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     transition:
     background 0.3s,
     color 0.3s;
@@ -380,12 +378,12 @@ img {
 
     .contendor-icons {
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
     }
 }
 
 
-/*  BLOQUE 3 TEAM */
+
 /*  BLOQUE 3 TEAM */
 .team {
     background: #0a0a0e;
@@ -401,9 +399,9 @@ img {
 }
 
 .person1 {
-    flex: 1;
+    flex: 1; 
     overflow: hidden; 
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 20px rgba(201, 168, 76, 0.3);
 }
 
@@ -412,12 +410,10 @@ img {
     height: 425px;
     object-fit: cover;
     display: block; 
-    border-radius: 15px;
 }
 
 .imagen-persona {
     overflow: hidden;
-    border-radius: 5px;
 }
 
 .descripcion {
@@ -470,7 +466,6 @@ footer {
     justify-content: center;
     gap: 2rem;     
     padding: 0 4rem;
-    
 }
 
 .contenedor-map {

@@ -10,6 +10,10 @@ body {
     color: #e8e0d0;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* BARRA */
 .barra {
     position: fixed;
@@ -126,7 +130,7 @@ body {
         position: relative;
     }
 
-    .barra-container {
+    .barra-container {  
         justify-content: center;
     }
 
@@ -157,7 +161,6 @@ body {
     display: flex;
     gap: 3rem;
     padding: 2rem;
-    border-radius: 12px;
 }
 .video-item {
     flex: 1;
@@ -197,6 +200,7 @@ body {
         height: 220px;
     }
 }
+
 
 
 /* SECCION DE AUDIOS */
