@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", serif;
+    background: #0a0a0e;
+    color: #e8e0d0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* BARRA */
+.barra {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: 65px;
+    padding: 0 2rem;
+    background: rgba(5, 5, 10, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+.barra-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-icono {
+    font-size: 1.6rem;
+    color: #c9a84c;
+}
+
+.logo-texto {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-texto small {
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+    color: #888;
+}
+
+.logo-texto strong {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: #c9a84c;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #e8e0d0;
+    font-size: 0.82rem;
+    letter-spacing: 1.5px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #c9a84c;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.iconos input {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(201, 168, 76, 0.3);
+    border-radius: 20px;
+    padding: 5px 14px;
+    color: #e8e0d0;
+    font-size: 0.78rem;
+    letter-spacing: 1px;
+    outline: none;
+    width: 150px;
+}
+
+.iconos input::placeholder {
+    color: #666;
+}
+
+.iconos span {
+    font-size: 1.1rem;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.iconos span:hover {
+    color: #c9a84c;
+}
+
+/* RESPONSIVE MENU */
+@media (max-width: 768px) {
+        /* BARRA */
+    .logo,
+    .iconos {
+        display: none;
+    }
+    .barra {
+        height: auto;
+        padding: 1.2rem 0;
+        position: relative;
+    }
+    .barra-container {
+        justify-content: center;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .menu a {
+        font-size: 0.82rem;
+        letter-spacing: 2px;
+    }
+}
+
+/* BLOQUE 1 PRINCIPAL */
+.principal {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/fondoheader.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #0a0a0e;
+    background-position: right center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.sombra {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+    to right,
+    rgba(5, 5, 10, 0.9) 0%,
+    rgba(5, 5, 10, 0.45) 55%,
+    rgba(5, 5, 10, 0.1) 100%);
+}
+
+.texto-principal {
+    position: relative;
+    z-index: 10;
+    padding: 0 5rem;
+    max-width: 580px;
+}
+
+.texto-principal h1 {
+    font-size: 4rem;
+    letter-spacing: 4px;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+.texto-principal h1 span {
+    color: #c9a84c;
+}
+
+.texto-principal p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #a09888;
+    margin-bottom: 2rem;
+}
+
+.texto-principal a {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 1px solid #c9a84c;
+    color: #c9a84c;
+    text-decoration: none;
+    font-size: 0.82rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition:
+    background 0.3s,
+    color 0.3s;
+    border-radius: 7px;
+}
+
+.texto-principal a:hover {
+    background: #c9a84c;
+    color: #000;
+}
+
+/* RESPONSIVE PRINCIPAL */
+@media (max-width: 1024px) {
+    .principal {
+        background-size: cover; 
+        background-attachment: scroll; 
+        background-position: center center; 
+        align-items: flex-end;
+        padding-bottom: 0;
+    }
+    .sombra {
+        background: linear-gradient(
+            to top,
+            rgba(5, 5, 10, 1) 30%,
+            rgba(5, 5, 10, 0.3) 65%,
+            rgba(5, 5, 10, 0) 100%
+        );
+    }
+    .texto-principal {
+        width: 100%;
+        max-width: 100%;
+        padding: 2.5rem 2rem;
+        text-align: center;
+    }
+    .texto-principal h1 {
+        font-size: 2.4rem;
+    }
+    .texto-principal p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .principal {
+        background-image: url("../img/fondomobile.png");
+        background-position: center top;
+        background-size: cover;
+        background-attachment: scroll;
+        align-items: flex-end;
+        padding-bottom: 0;
+    }
+    .texto-principal {
+        width: 100%;
+        max-width: 100%;
+        padding: 2.5rem 1.5rem;
+        text-align: center;
+    }
+    .texto-principal h1 {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+    .texto-principal p {
+        font-size: 1rem;
+    }
+    .texto-principal a {
+        font-size: 0.75rem;
+        padding: 10px 22px;
+    }
+}
+
+
+
+/*  BLOQUE 2 INFORMACION */
+.information {
+    background: #fff;
+    padding: 5rem 2rem;
+}
+
+.contendedor-informacion {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.imagen-balanza {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-balanza img {
+    width: 100%;
+    max-width: 420px;
+    object-fit: contain;
+}
+
+.content {
+    flex: 1;
+}
+
+.content h2 {
+    font-size: 2.4rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+    font-family: "Georgia", serif;
+}
+
+.content h2 span {
+    color: #c9a84c;
+    font-style: italic;
+}
+
+.content p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #777;
+    margin-bottom: 2.5rem;
+}
+
+.contendor-icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.icon-one {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.icon-one span {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(201, 168, 76, 0.12);
+    border: 1px solid rgba(201, 168, 76, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #c9a84c;
+    flex-shrink: 0; 
+}
+
+.icon-one p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* RESPONSIVE INFORMACION */
+@media (max-width: 1024px) {
+
+    .contendedor-informacion {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .imagen-balanza img {
+        max-width: 280px;
+    }
+
+    .content h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .contendor-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*  BLOQUE 3 TEAM */
+/*  BLOQUE 3 TEAM */
+.team {
+    background: #0a0a0e;
+    padding: 5rem 2rem;
+}
+
+.contenedor-team {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.person1 {
+    flex: 1;
+    overflow: hidden; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(201, 168, 76, 0.3);
+}
+
+.imagen-persona img {
+    width: 100%;
+    height: 425px;
+    object-fit: cover;
+    display: block; 
+    border-radius: 15px;
+}
+
+.imagen-persona {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.descripcion {
+    padding: 1.2rem 0;
+}
+
+.descripcion h2 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 0.3rem;
+    font-family: "Georgia", serif;
+    text-align: center;
+}
+
+.descripcion p {
+    font-size: 1rem;
+    color: #c9a84c;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* RESPONSIVE TEAM */
+@media (max-width: 768px) {
+    .contenedor-team {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .imagen-persona img {
+        height: auto;
+    }
+}
+
+
+
+/* BLOQUE 4 FOOTER */
+footer {
+    background-color: #13131a;
+}
+
+.contenedor-footer {
+    display: flex;
+    height: 300px;
+}
+
+.caja-icons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;     
+    padding: 0 4rem;
+    
+}
+
+.contenedor-map {
+    flex: 1;  
+}
+
+.contenedor-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.icon1 {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem; 
+}
+
+.icon1 span {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(201, 168, 76, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #c9a84c;
+    flex-shrink: 0; 
+}
+
+.icon1 p {
+    font-size: 1rem;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.icon1 strong {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    .contenedor-footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .caja-icons {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .contenedor-map {
+        height: 250px;
+    }
+}
