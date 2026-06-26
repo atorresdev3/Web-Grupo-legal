@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D2D42"/>
+      <stop offset="50%" stop-color="#0C1825"/>
+      <stop offset="100%" stop-color="#030507"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#FFF09A"/>
+      <stop offset="18%"  stop-color="#FFD940"/>
+      <stop offset="42%"  stop-color="#F0A012"/>
+      <stop offset="65%"  stop-color="#C85010"/>
+      <stop offset="85%"  stop-color="#981E05"/>
+      <stop offset="100%" stop-color="#650E03"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" rx="190" ry="190" fill="url(#bgGrad)"/>
+
+  <!-- SCALE OF JUSTICE - clean and bold -->
+  <!-- Central vertical beam -->
+  <rect x="497" y="210" width="30" height="580" fill="url(#goldGrad)" rx="6"/>
+
+  <!-- Top horizontal bar -->
+  <rect x="270" y="210" width="484" height="28" fill="url(#goldGrad)" rx="6"/>
+
+  <!-- Base / stand -->
+  <rect x="380" y="760" width="264" height="30" fill="url(#goldGrad)" rx="6"/>
+  <rect x="460" y="790" width="104" height="22" fill="url(#goldGrad)" rx="4"/>
+
+  <!-- Left chain -->
+  <rect x="281" y="238" width="16" height="140" fill="url(#goldGrad)" rx="4"/>
+  <!-- Right chain -->
+  <rect x="727" y="238" width="16" height="140" fill="url(#goldGrad)" rx="4"/>
+
+  <!-- Left pan -->
+  <!-- Pan bowl shape using ellipse + arc approximation -->
+  <path d="M 190 378 Q 200 460 289 470 Q 378 460 388 378 Z" fill="url(#goldGrad)"/>
+  <rect x="185" y="370" width="208" height="20" fill="url(#goldGrad)" rx="10"/>
+
+  <!-- Right pan -->
+  <path d="M 636 378 Q 646 460 735 470 Q 824 460 834 378 Z" fill="url(#goldGrad)"/>
+  <rect x="631" y="370" width="208" height="20" fill="url(#goldGrad)" rx="10"/>
+
+  <!-- Small top pivot circle -->
+  <circle cx="512" cy="210" r="22" fill="url(#goldGrad)"/>
+</svg>
