@@ -296,6 +296,11 @@ img {
     transition: all 0.3s ease;
 }
 
+.faq-item a     {
+    text-decoration: none;
+    color: #ffaa00;
+}
+
 .faq-item summary {
     padding: 1.2rem 1.5rem;
     color: #e8e0d0;
